@@ -1,12 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: private-reg
+  name: harbor-koo
 spec:
   containers:
   - name: private-reg-container
     image: koomzc/test
   imagePullSecrets:
   - name: harbor-koo
-
-
