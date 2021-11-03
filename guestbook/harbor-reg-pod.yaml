@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: harbor-koo
+  name: harbor-koo5
 spec:
   containers:
   - name: private-reg-container
-    image: koomzc/test
+    image: http://192.168.10.218/koomzc2/eddy:0.1
   imagePullSecrets:
-  - name: harbor-koo
+  - name: harbor-koo2
