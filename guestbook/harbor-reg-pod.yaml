@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
   - name: private-reg-container
-    image: http://192.168.10.218/koomzc/nginx:0.1
+    image: http://192.168.10.218/koomzc2/nginx:0.1
   imagePullSecrets:
   - name: harbor-koo2
