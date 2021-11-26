@@ -14,6 +14,18 @@ spec:
     spec:
       containers:
       - name: my-nginx
-        image: nginx
+        image: harbor02.test.local/koomzc2/eddie:latest
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: regcred
+data:
+  #.dockerconfigjson: <base-64-encoded-json-here>
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJoYXJib3IwMi50ZXN0LmxvY2FsIjogewoJCQkiYXV0aCI6ICJZV1J0
+YVc0NlNHRnlZbTl5TVRJek5EVT0iCgkJfQoJfQp9
+type: kubernetes.io/dockerconfigjson
