@@ -1,0 +1,13 @@
+
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: name-example-foo
+  namespace: canary
+spec:
+  virtualhost:
+    fqdn: test4.aikoo.net
+  routes:
+    - services:
+      - name: canary-service
+        port: 80
