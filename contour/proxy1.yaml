@@ -3,11 +3,11 @@ apiVersion: projectcontour.io/v1
 kind: HTTPProxy
 metadata:
   name: name-example-foo
-  namespace: default
+  namespace: tanzu-system-monitoring
 spec:
   virtualhost:
     fqdn: test3.aikoo.net
   routes:
     - services:
-      - name: kuard
+      - name: prometheus-server
         port: 80
