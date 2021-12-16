@@ -37,16 +37,3 @@ spec:
     - services:
       - name: argocd-server
         port: 80
----
-apiVersion: projectcontour.io/v1
-kind: HTTPProxy
-metadata:
-  name: argocd-proxy-https
-  namespace: argocd
-spec:
-  virtualhost:
-    fqdn: argocd.aikoo.net
-  routes:
-    - services:
-      - name: argocd-server
-        port: 443
