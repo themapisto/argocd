@@ -36,6 +36,6 @@ spec:
   routes:
     - services:
       - name: argocd-server
-        port: 80
+        port: 80,443
 
 
