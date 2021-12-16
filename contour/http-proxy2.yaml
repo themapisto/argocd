@@ -24,4 +24,18 @@ spec:
     - services:
       - name: rollout-bluegreen-active
         port: 80
+---
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: argocd-proxy
+  namespace: argocd
+spec:
+  virtualhost:
+    fqdn: argocd.aikoo.net
+  routes:
+    - services:
+      - name: argocd-server
+        port: 80
+
 
