@@ -32,7 +32,7 @@ metadata:
   namespace: argocd
 spec:
   virtualhost:
-    fqdn: argocd.aikoo.net
+    fqdn: test3.aikoo.net
     tls:
       passthrough: true
   tcpproxy:
