@@ -6,7 +6,7 @@ metadata:
   namespace: tanzu-system-monitoring
 spec:
   virtualhost:
-    fqdn: test3.aikoo.net
+    fqdn: prometheus.aikoo.net
   routes:
     - services:
       - name: prometheus-server
