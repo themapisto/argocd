@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: canary-rollout
-## koo
+## kooo
 spec:
   replicas: 10
   revisionHistoryLimit: 2
