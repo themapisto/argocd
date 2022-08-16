@@ -2,7 +2,7 @@ import os
 import subprocess
 
 
-res = subprocess.check_output('cat rollout.yaml | grep "particule/simplecolorapi:" ', shell=True)
+res = subprocess.check_output('cat /home/ubuntu/argocd/argocd/bluegreen/rollout.yaml | grep "particule/simplecolorapi:" ', shell=True)
 result= res.decode('utf-8')
 b=result[-4]
 print(b)
