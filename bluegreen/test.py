@@ -10,3 +10,5 @@ else :
     print ("blue to green")
     os.system("sh green.sh")
 
+
+os.system("git cmp 'kpkim'")
