@@ -19,7 +19,7 @@ metadata:
   namespace: bluegreen
 spec:
   virtualhost:
-    fqdn: test2.aikoo.net
+    fqdn: test3.aikoo.net
   routes:
     - services:
       - name: rollout-bluegreen-active
