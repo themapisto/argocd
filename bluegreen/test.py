@@ -5,9 +5,9 @@ res = subprocess.check_output('cat /home/ubuntu/argocd/argocd/bluegreen/rollout.
 reslen= len(res)
 if reslen==44 :
     print ("green to blue")
-    os.system("sh blue.sh")
+    os.system("sh /home/ubuntu/argocd/argocd/bluegreen/blue.sh")
 else :
     print ("blue to green")
-    os.system("sh green.sh")
+    os.system("sh /home/ubuntu/argocd/argocd/bluegreen/green.sh")
 
 
