@@ -6,7 +6,7 @@ metadata:
   namespace: canary
 spec:
   virtualhost:
-    fqdn: test1.aikoo.net
+    fqdn: test111.aikoo.net
   routes:
     - services:
       - name: canary-service
@@ -19,7 +19,7 @@ metadata:
   namespace: bluegreen
 spec:
   virtualhost:
-    fqdn: test333.aikoo.net
+    fqdn: test222.aikoo.net
   routes:
     - services:
       - name: rollout-bluegreen-active
