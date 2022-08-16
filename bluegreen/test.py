@@ -11,4 +11,3 @@ else :
     os.system("sh green.sh")
 
 
-os.system("git cmp 'kpkim'")
