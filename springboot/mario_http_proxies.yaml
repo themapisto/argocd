@@ -23,4 +23,19 @@ spec:
     - services:
       - name: springboot
         port: 8080
+---
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: argocd-proxy
+  namespace: argocd
+spec:
+  virtualhost:
+    fqdn: argocd.taskoo.net
+    tls:
+      passthrough: true
+  tcpproxy:
+    services:
+    - name: argocd-server
+      port: 80
 
