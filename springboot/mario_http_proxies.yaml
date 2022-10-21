@@ -18,7 +18,7 @@ metadata:
   namespace: default
 spec:
   virtualhost:
-    fqdn: springboot.taskoo.net
+    fqdn: springboottest.taskoo.net
   routes:
     - services:
       - name: springboot
