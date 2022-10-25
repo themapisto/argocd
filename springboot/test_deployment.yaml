@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springboot
-        image: harbor.aikoo.net/tanzu/springboot:1.8
+        image: harbor.aikoo.net/tanzu/springboot:1.9
         ports:
         - containerPort: 8080
 
