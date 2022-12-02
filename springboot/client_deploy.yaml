@@ -5,7 +5,7 @@ metadata:
   labels:
     app: springboot
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: springboot
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springboot
-        image: harbor.aikoo.net/tanzu/springboot:1.1
+        image: harbor.aikoo.net/tanzu/springboot:1.91
         ports:
         - containerPort: 8080
 
