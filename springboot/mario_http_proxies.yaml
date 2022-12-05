@@ -11,4 +11,30 @@ spec:
       - name: mario
         port: 80
 ---
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: springboot
+  namespace: springboot
+spec:
+  virtualhost:
+    fqdn: client.taskoo.net
+  routes:
+    - services:
+      - name: springboot
+        port: 8080
+---
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: eureka
+  namespace: springboot
+spec:
+  virtualhost:
+    fqdn: eureka.taskoo.net
+  routes:
+    - services:
+      - name: eureka
+        port: 8080
+
 
