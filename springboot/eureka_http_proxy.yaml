@@ -1,0 +1,12 @@
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: eureka
+  namespace: springboot
+spec:
+  virtualhost:
+    fqdn: eureka.taskoo.net
+  routes:
+    - services:
+      - name: eureka
+        port: 8761

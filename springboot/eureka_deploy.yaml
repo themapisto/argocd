@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: eureka
+  namespace: springboot
   labels:
     app: eureka
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
       - name: eureka
-        image: harbor.aikoo.net/tanzu/eureka:1.1
+        image: harbor.aikoo.net/tanzu/eureka:1.2
         ports:
-        - containerPort: 8080
+        - containerPort: 8761
 
